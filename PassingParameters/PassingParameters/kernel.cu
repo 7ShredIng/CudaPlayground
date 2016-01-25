@@ -4,7 +4,7 @@
 #include <device_functions.h>
 #include "device_launch_parameters.h"
 #include <stdlib.h>
-#include "common.h"
+#include "..\..\common.h"
 
 __global__ void add(const int value1, const int value2, int *result)
 {
