@@ -46,4 +46,12 @@ int main(void)
 		printf("Max thread dimensions: %d %d %d\n", DeviceProperties.maxThreadsDim[0], DeviceProperties.maxThreadsDim[1], DeviceProperties.maxThreadsDim[2]);
 		printf("Max grid dimensions: %d %d %d\n", DeviceProperties.maxGridSize[0], DeviceProperties.maxGridSize[1], DeviceProperties.maxGridSize[2]);
 	}
+
+	memset( &DeviceProperties, 0, sizeof(cudaDeviceProp));
+	DeviceProperties.major = 1;
+	DeviceProperties.minor = 3;
+	int device;
+	HANDLE_ERROR(cudaChooseDevice(&device, &DeviceProperties));
+	printf("ID of device closest to revision 1.3: %d\n ", device);
+	HANDLE_ERROR(cudaSetDevice(device));
 }
