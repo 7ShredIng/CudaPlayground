@@ -1,0 +1,43 @@
+﻿Build started 25/01/2016 12:10:40.
+     1>Project "D:\_temp\cuda\cuda_sample\CudaPlayground\HelloWorld\HelloWorld\HelloWorld.vcxproj" on node 2 (rebuild target(s)).
+     1>CudaClean:
+         cmd.exe /C "C:\Users\rakumr\AppData\Local\Temp\tmp8023348046db4149a95663fd8622caba.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile      -DWIN32 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD " -o Release\kernel.cu.obj "D:\_temp\cuda\cuda_sample\CudaPlayground\HelloWorld\HelloWorld\kernel.cu" -clean
+         
+         D:\_temp\cuda\cuda_sample\CudaPlayground\HelloWorld\HelloWorld>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile      -DWIN32 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD " -o Release\kernel.cu.obj "D:\_temp\cuda\cuda_sample\CudaPlayground\HelloWorld\HelloWorld\kernel.cu" -clean 
+         kernel.cu
+       PrepareForBuild:
+         Creating directory "D:\_temp\cuda\cuda_sample\CudaPlayground\HelloWorld\Release\".
+       InitializeBuildStatus:
+         Creating "Release\HelloWorld.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DNDEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I. /FIcuda_runtime.h /c D:\_temp\cuda\cuda_sample\CudaPlayground\HelloWorld\HelloWorld\kernel.cu 
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\rakumr\AppData\Local\Temp\tmp52f5df5be8d443a0967e7963ad87dcd0.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile -cudart static     -DWIN32 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD " -o Release\kernel.cu.obj "D:\_temp\cuda\cuda_sample\CudaPlayground\HelloWorld\HelloWorld\kernel.cu"
+         
+         D:\_temp\cuda\cuda_sample\CudaPlayground\HelloWorld\HelloWorld>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile -cudart static     -DWIN32 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD " -o Release\kernel.cu.obj "D:\_temp\cuda\cuda_sample\CudaPlayground\HelloWorld\HelloWorld\kernel.cu" 
+         kernel.cu
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\_temp\cuda\cuda_sample\CudaPlayground\HelloWorld\Release\HelloWorld.exe" /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\HelloWorld.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\_temp\cuda\cuda_sample\CudaPlayground\HelloWorld\Release\HelloWorld.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\_temp\cuda\cuda_sample\CudaPlayground\HelloWorld\Release\HelloWorld.lib" /MACHINE:X86 Release\kernel.cu.obj
+         LINK : /LTCG wurde angegeben, es ist jedoch keine Codegenerierung erforderlich. Entfernen Sie /LTCG aus der Linkbefehlszeile, um die Linkerleistung zu erhöhen.
+         HelloWorld.vcxproj -> D:\_temp\cuda\cuda_sample\CudaPlayground\HelloWorld\Release\HelloWorld.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\_temp\cuda\cuda_sample\CudaPlayground\HelloWorld\Release\HelloWorld.exe;#1" /manifest Release\HelloWorld.exe.intermediate.manifest
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "D:\_temp\cuda\cuda_sample\CudaPlayground\HelloWorld\Release\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "D:\_temp\cuda\cuda_sample\CudaPlayground\HelloWorld\Release\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "D:\_temp\cuda\cuda_sample\CudaPlayground\HelloWorld\Release\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart32_75.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart64_75.dll
+                 2 file(s) copied.
+       FinalizeBuildStatus:
+         Deleting file "Release\HelloWorld.unsuccessfulbuild".
+         Touching "Release\HelloWorld.lastbuildstate".
+     1>Done Building Project "D:\_temp\cuda\cuda_sample\CudaPlayground\HelloWorld\HelloWorld\HelloWorld.vcxproj" (rebuild target(s)).
+
+Das Erstellen war erfolgreich.
+
+Time Elapsed 00:00:04.69
