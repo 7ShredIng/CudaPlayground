@@ -1,4 +1,4 @@
-#include "..\..\common.h"
+#include "common.h"
 
 #define N 10
 
