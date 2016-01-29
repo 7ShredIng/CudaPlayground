@@ -11,3 +11,4 @@ http://http.developer.nvidia.com/NsightVisualStudio/2.2/Documentation/UserGuide/
 
 ## Notes
 - Many errors in code samples. watch out for missing includes, undefined variables..
+- Simple time measuring does not work. Use cudaEvents
