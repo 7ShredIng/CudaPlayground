@@ -1,7 +1,7 @@
 
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
-#include "..\..\common.h"
+#include <common.h>
 
 #include <stdio.h>
 int main(void)
@@ -15,7 +15,7 @@ int main(void)
 		HANDLE_ERROR(cudaGetDeviceProperties(&DeviceProperties, i));
 		printf("Name: %\ns", DeviceProperties.name);
 		printf("Compute capability: %d - %d\n", DeviceProperties.major, DeviceProperties.minor);
-		printf("Clock rate: %s\n", DeviceProperties.clockRate);
+		//printf("Clock rate: %s\n", DeviceProperties.clockRate);
 		printf("Device copy overlap: ");
 		if(DeviceProperties.deviceOverlap)
 		{
