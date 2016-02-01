@@ -12,9 +12,9 @@
 #define MAX_TEMP 1.0f
 #define MIN_TEMP 0.0001f
 
-texture<float, cudaTextureType2D, cudaReadModeElementType> texConstSrc;
-texture<float, cudaTextureType2D, cudaReadModeElementType> texIn;
-texture<float, cudaTextureType2D, cudaReadModeElementType> texOut;
+texture<float, 2>texConstSrc;
+texture<float, 2>texIn;
+texture<float, 2>texOut;
 
 struct DataBlock
 {
