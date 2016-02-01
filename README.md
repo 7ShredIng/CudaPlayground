@@ -12,3 +12,5 @@ http://http.developer.nvidia.com/NsightVisualStudio/2.2/Documentation/UserGuide/
 ## Notes
 - Many errors in code samples. watch out for missing includes, undefined variables.. https://developer.nvidia.com/cuda-example-errata-page
 - Simple time measuring does not work. Use cudaEvents
+- Problem in chapter 7.3.4 -- tex1Dfetch() is not available in cuda v7+
+- Problem in chapter 7.3.4 -- 2D texture does not compile 
