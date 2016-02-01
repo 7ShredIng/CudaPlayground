@@ -14,3 +14,7 @@ http://http.developer.nvidia.com/NsightVisualStudio/2.2/Documentation/UserGuide/
 - Simple time measuring does not work. Use cudaEvents
 - Problem in chapter 7.3.4 -- tex1Dfetch() is not available in cuda v7+
 - Problem in chapter 7.3.4 -- 2D texture does not compile 
+
+
+# Task List
+- [ ] make proper 1D/2D texture example. Book examples does not work with CUDA 7.x
