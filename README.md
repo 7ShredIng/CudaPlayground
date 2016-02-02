@@ -18,3 +18,4 @@ http://http.developer.nvidia.com/NsightVisualStudio/2.2/Documentation/UserGuide/
 
 # Task List
 - [ ] make proper 1D/2D texture example. Book examples does not work with CUDA 7.x
+- [ ] for chapter 8 OpenGL or DirectX is required. 
